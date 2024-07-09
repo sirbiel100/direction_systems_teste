@@ -1,0 +1,57 @@
+@import "../variables.scss";
+
+.loading{
+    position: fixed;
+    height: 100vh;
+    height: 100svh;
+    width: 100%;
+    z-index: 20;
+    background: radial-gradient(circle, #1b1b1b 0%, #161616 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    img{
+        width: clamp(10em, 25vw, 20em);
+        animation: fromLeft 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+    }
+
+    div{
+        color: #fff;
+        animation: fadeIn 1.2s linear 1;
+        p {
+            font-size: clamp(2em, 5vw, 4em);
+            color: $Neutral_very_light_shade;
+            &:first-of-type {
+              font-family: $Brand_Direction !important;
+            }
+    
+            &:last-of-type {
+              font-family: $Brand_Systems !important;
+              scale: .9;
+            }
+          }
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: .3;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}

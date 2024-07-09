@@ -1,0 +1,64 @@
+@import "../variables.scss";
+
+.produto{
+    padding: 0 0 18em 0;
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 0 1em 0 1em;
+        h1{
+            color: $Olivine_neutral;
+            text-align: center;
+        }
+
+        p{
+            color: $Neutral_light_shade;
+            line-height: 1.8;
+            text-align: center;
+        }
+        button{
+            width: clamp(10em, 20vw, 15em);
+            background-color: $Olivine_dark_shade_02;
+            border-radius: 1em;
+            border: 1px solid transparent;
+            color: $Neutral_very_light_shade;
+            padding: .5em 0;
+            box-shadow: .2em .2em 1em 0 #1313132d;
+            cursor: pointer;
+        }
+    }
+    img{
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 75em) {
+    .produto {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        main{
+            gap: 4em;
+            max-width: 50%;
+
+            button{
+                color: $Neutral_very_light_shade;
+                transition: all 200ms ease-in-out;
+
+                &:hover{
+                    border: 1px solid $Olivine_dark_shade_02;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        img{
+            display: inline-block;
+        }
+    }
+}

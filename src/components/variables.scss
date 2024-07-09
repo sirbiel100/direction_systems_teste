@@ -1,0 +1,30 @@
+// Colors
+
+    // Neutral
+            $Neutral_very_light_shade: #F5F5F5;
+            $Neutral_light_shade: #9E9E9E;
+            $Neutral_dark_shade_01: #333333;
+            $Neutral_dark_shade_02: #1d1d1d;
+
+    // Olivine
+            $Olivine_light_shade: #ADD68C;
+            $Olivine_neutral: #99C478;
+            $Olivine_dark_shade_01: #7BAA5A;
+            $Olivine_dark_shade_02: #5E8C41;
+            
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Mono&family=Space+Grotesk:wght@500&display=swap');
+
+
+    // Logo
+        $Brand_Direction: 'Space Grotesk', sans-serif;
+        $Brand_Systems: 'Roboto Mono', monospace;
+    
+    //Header
+        $Header_Title: 'Poppins', sans-serif;
+        $Header_Font_Size: clamp(1.5rem, 2vw, 2.5rem);
+
+    //Paragraph
+        $Paragraph_Text: 'Roboto', sans-serif; 
+        $Paragraph_Font_Size: clamp(1.1rem, 1.4vw, 1.2rem);  

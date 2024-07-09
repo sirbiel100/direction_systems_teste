@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.quemSomos{
+    padding: 5em 0 10em 0;
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 0 1em 0 1em;
+        h1{
+            color: $Olivine_neutral;
+        }
+
+        p{
+            color: $Neutral_light_shade;
+            line-height: 1.6;
+        }
+    }
+    img{
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 75em) {
+    .quemSomos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        main{
+            gap: 2em;
+            max-width: 50%;
+            h1{
+                display: none;
+            }
+        }
+
+        img{
+            display: block;
+        }
+    }
+}
